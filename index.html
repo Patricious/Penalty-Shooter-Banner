@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description"
+        content="A penalty shootout game where you must beat the keeper and save incoming shots from the CPU">
+    <meta name="keywords" content="penalty shootout, game, penalty, football, soccer, football game, soccer game">
+
+    <link rel="shortcut icon" href="assets/images/favicon/favicon.png" type="image/x-icon">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <title>Football Penalty kicks</title>
+</head>
+
+<body>
+
+    <!-- Header -->
+    <header>
+        <h1>Football Penalty kicks</h1>
+    </header>
+
+    <!-- Banner Area -->
+    <main class="banner-area">
+
+        <!--Modal instructions box-->
+        <aside class="modal">
+            <div class="modal-content">
+                <h1>Football Penalty kicks rules</h1>
+                <p>
+                    You are RED, computer Is BLUE. Shoot goals by selecting LEFT, MIDDLE or RIGHT.If you choose the same direction as the computer, the shot will be saved.
+                </p>
+                <p> If you choose a different direction, you'll get a goal.
+                    After you kick, it's time to save.
+                    When saving you choose either left, right or middle again and the first to 5 goals wins.
+                    Reset button to restart/rest or refresh rules
+                    You can toggle play/stop music button </p>
+                <button class="close-button">Start</button>
+            </div>
+        </aside>
+
+        <!-- Settings -->
+        <section class="banner-settings">
+            <button class="settings-button" id="music-button">
+                Play Music
+            </button>
+
+            <button class="settings-button" id="modal-button">
+                Instructions
+            </button>
+
+            <button class="settings-button" id="reset-button">
+                Reset/Restart
+            </button>
+        </section>
+
+        <!-- Game Image -->
+        <section class="banner-image-area">
+            <img id="game-image" src="assets/images/user-ready.png" alt="">
+        </section>
+
+        <!-- Scoreboard -->
+        <section class="score-board">
+            <h2>YOU <span id="user-score">0</span> - <span id="cpu-score">0</span> Computer</h2>
+        </section>
+
+        <!-- Game Prompts -->
+        <h3><span id="gameState">It's your turn to kick</span></h3>
+
+        <!-- Game Controls -->
+        <section class="controls">
+            <button class="control-button" id="left">left</button>
+
+            <button class="control-button" id="middle">middle</button>
+
+            <button class="control-button" id="right">right</button>
+        </section>
+
+    </main>
+    <!-- Music -->
+    <audio src="assets/music/free-crowd-cheering-sounds-02-strong-cheering-rhythmic-cheering-116190.mp3" loop></audio>
+
+    <!-- JavaScript file link -->
+    <script src="assets/scripts/script.js"></script>
+</body>
+
+</html>
